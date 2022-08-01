@@ -216,6 +216,20 @@
 </script>
 
 <style>
+
+    ::-webkit-scrollbar {
+        background-color: transparent;;
+        color: black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #16182D;
+        border-radius: 1rem
+    }
+
+    body {
+        overflow-x: hidden;
+    }
     h1 {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 900;
@@ -245,6 +259,7 @@
         border-radius: 20px;
         margin-left: 3rem;
         margin-right: 3rem;
+        margin-bottom: 2rem;
         margin-top: 2rem;
     }
 
@@ -368,8 +383,11 @@
 
 
     @media screen and (max-width: 891px){
+
+        
         body {
-            overflow:scroll
+            overflow:scroll;
+            overflow-x:hidden;
         }
         h1 {
             background-color: transparent;
